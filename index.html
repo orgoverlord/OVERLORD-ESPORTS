@@ -1,139 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OVERLORD ESPORTS</title>
-
-<style>
-
-/* BODY BACKGROUND */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
-
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
-    url("file_00000000ece471fa9d69f73cc39cffc3.png");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-/* NEON EFFECT */
-.neon {
-    color: #fff;
-    text-shadow:
-        0 0 5px #ff0000,
-        0 0 10px #ff0000,
-        0 0 20px #ff0000,
-        0 0 40px #ff0000;
-}
-
-/* HEADER */
-header {
-    padding: 30px;
-}
-
-/* BUTTONS */
-button {
-    padding: 12px 25px;
-    margin: 10px;
-    border: none;
-    border-radius: 8px;
-    background: black;
-    color: red;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 0 10px red;
-}
-
-button:hover {
-    background: red;
-    color: black;
-}
-
-/* SECTIONS */
-.section {
-    display: none;
-    padding: 20px;
-    margin: 20px;
-    background: rgba(0,0,0,0.6);
-    border-radius: 10px;
-}
-
-/* VISIBLE */
-.show {
-    display: block;
-}
-
-/* COUNTDOWN */
-#countdown {
-    font-size: 24px;
-    color: cyan;
-    margin-top: 10px;
-}
-
-/* LINKS */
-a {
-    color: cyan;
-}
-
-</style>
+    <title>Overlord Esports</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
+<body class="home">
 
 <header>
-<h1 class="neon">OVERLORD ESPORTS</h1>
-
-<p>
-OVERLORD ESPORTS IS OFFICIAL ORGANISATION.<br>
-WE CONDUCTED ONLINE/OFFLINE FREE FIRE EVENTS ALL OVER INDIA.
-</p>
-
-<button onclick="toggleSection('team1')">TEAM OVERLORD</button>
-<button onclick="toggleSection('team2')">TEAM DG ESPORTS</button>
-<button onclick="toggleSection('tournament')">TOURNAMENT</button>
-
+    <img src="logo.png" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tournaments.html">Tournaments</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
 
+<section class="hero">
+    <h1>OVERLORD ESPORTS</h1>
+    <p>Official Free Fire Max LAN Tournament Organisers</p>
+    <a href="tournaments.html" class="btn">VIEW TOURNAMENTS</a>
+</section>
 
-<!-- TEAM OVERLORD -->
-<div id="team1" class="section">
-
-<h2 class="neon">TEAM OVERLORD</h2>
-
-<p><b>New Player Added</b></p>
-
-<p>
-RUDRA
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;   /* THIS FIXES FONT COLOR */
-}
-
-/* TEAM CARD TEXT FIX */
-.section {
-    color: white;
-}
-
-/* PLAYER CARD FIX */
-.team-card {
-    background: rgba(0,0,0,0.65);
-    color: white;
-}
-
-/* PLAYER ROLE TEXT */
-.team-card p {
-    color: #e5e5e5;
-}
-
-/* HEADING FIX */
-h1, h2, h3 {
-    color: white;
-}
+</body>
+</html>
