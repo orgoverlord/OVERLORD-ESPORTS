@@ -7,110 +7,78 @@
 
 <style>
 
-/* LOADER */
-#loader{
-position:fixed;
-width:100%;
-height:100%;
-background:black;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:30px;
-color:#00f0ff;
-z-index:9999;
-animation:fadeOut 2s forwards;
-animation-delay:2s;
-}
-
-@keyframes fadeOut{
-to{opacity:0;visibility:hidden;}
-}
-
-/* BODY */
+/* BODY BACKGROUND */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
 
-  background-image: url('file_00000000ece471fa9d69f73cc39cffc3.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+    url("file_00000000ece471fa9d69f73cc39cffc3.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-@keyframes bgMove{
-0%{background-position:0%}
-100%{background-position:100%}
+/* NEON EFFECT */
+.neon {
+    color: #fff;
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0000,
+        0 0 20px #ff0000,
+        0 0 40px #ff0000;
 }
 
-/* LOGO */
-.logo{
-width:200px;
-margin-top:30px;
-filter:drop-shadow(0 0 20px #00f0ff);
+/* HEADER */
+header {
+    padding: 30px;
 }
 
 /* BUTTONS */
-button{
-padding:12px 20px;
-margin:5px;
-border:none;
-border-radius:10px;
-background:#00f0ff;
-color:black;
-font-weight:bold;
-cursor:pointer;
-transition:0.3s;
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background: black;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px red;
 }
 
-button:hover{
-background:#ff00c8;
-color:white;
-transform:scale(1.1);
+button:hover {
+    background: red;
+    color: black;
 }
 
 /* SECTIONS */
-.section{
-display:none;
-padding:20px;
+.section {
+    display: none;
+    padding: 20px;
+    margin: 20px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
 }
 
-.active{
-display:block;
-}
-
-/* PLAYER CARD */
-.card{
-background:rgba(0,0,0,0.6);
-margin:15px auto;
-padding:15px;
-width:280px;
-border-radius:15px;
-box-shadow:0 0 20px #00f0ff;
-}
-
-/* ALERT */
-.alert{
-background:rgba(255,0,0,0.2);
-padding:10px;
-border-radius:10px;
-box-shadow:0 0 15px red;
-animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-0%{box-shadow:0 0 10px red;}
-50%{box-shadow:0 0 25px red;}
-100%{box-shadow:0 0 10px red;}
+/* VISIBLE */
+.show {
+    display: block;
 }
 
 /* COUNTDOWN */
-.countdown{
-color:#00f0ff;
-font-size:20px;
-margin:10px;
+#countdown {
+    font-size: 24px;
+    color: cyan;
+    margin-top: 10px;
+}
+
+/* LINKS */
+a {
+    color: cyan;
 }
 
 </style>
@@ -118,201 +86,27 @@ margin:10px;
 
 <body>
 
-<div id="loader">
-OVERLORD ESPORTS
-</div>
+<header>
+<h1 class="neon">OVERLORD ESPORTS</h1>
 
-<img src="logo.png" class="logo">
+<p>
+OVERLORD ESPORTS IS OFFICIAL ORGANISATION.<br>
+WE CONDUCTED ONLINE/OFFLINE FREE FIRE EVENTS ALL OVER INDIA.
+</p>
 
-<h1>BORN TO DOMINATE</h1>
+<button onclick="toggleSection('team1')">TEAM OVERLORD</button>
+<button onclick="toggleSection('team2')">TEAM DG ESPORTS</button>
+<button onclick="toggleSection('tournament')">TOURNAMENT</button>
 
-<!-- NAVIGATION -->
+</header>
 
-<div>
 
-<button onclick="show('home')">HOME</button>
-
-<button onclick="show('team1')">OVERLORD TEAM</button>
-
-<button onclick="show('team2')">DG ESPORTS</button>
-
-<button onclick="show('tournament')">TOURNAMENT</button>
-
-<button onclick="show('contact')">CONTACT</button>
-
-</div>
-
-<!-- HOME -->
-
-<div id="home" class="section active">
-
-<h2>Official eSports Organisation</h2>
-
-<p>We conduct online and offline Free Fire Max events all over India</p>
-
-<div class="alert">
-
-SCRIMS CURRENTLY PAUSED
-
-</div>
-
-</div>
-
-<!-- TEAM 1 OVERLORD -->
-
+<!-- TEAM OVERLORD -->
 <div id="team1" class="section">
 
-<h2>OVERLORD ESPORTS</h2>
+<h2 class="neon">TEAM OVERLORD</h2>
 
-<div class="card">
-Manager<br>
-OLD-M9STER<br>
-Jaipur, Rajasthan
-</div>
+<p><b>New Player Added</b></p>
 
-<div class="card">
-Sniper<br>
-OLD-PRINCE.<br>
-Bharatpur, Rajasthan
-</div>
-
-<div class="card">
-Secondary Rusher<br>
-RamaCanSolo!<br>
-Indore
-</div>
-
-<div class="card">
-Primary Rusher<br>
-old-TSR<br>
-Indore
-</div>
-
-<div class="card">
-IGL and Nader<br>
-OLD-INFERNO<br>
-Surat, Gujarat
-</div>
-
-<div class="card">
-Substitute<br>
-OLD-ZORO!!<br>
-Hyderabad
-</div>
-
-</div>
-
-<!-- TEAM 2 DG ESPORTS -->
-
-<div id="team2" class="section">
-
-<h2>DG ESPORTS</h2>
-
-<p>Free Fire Max eSports team since 2022</p>
-
-<div class="card">
-Sniper<br>
-⚠️Bishnoi<br>
-Barmer, Rajasthan
-</div>
-
-<div class="card">
-IGL and Nader<br>
-#RAISTAR<br>
-Punjab
-</div>
-
-<div class="card">
-Primary Rusher<br>
-#Blackdragon<br>
-Barmer, Rajasthan
-</div>
-
-<div class="card">
-Player<br>
-DG ARJUN.<br>
-Barmer, Rajasthan
-</div>
-
-</div>
-
-<!-- TOURNAMENT -->
-
-<div id="tournament" class="section">
-
-<h2>INFERNO CHAMPIONSHIP INDORE S1</h2>
-
-<p>Venue: ANK Professional Academy, Tilak Nagar</p>
-
-<p>Date: 1 March, 11:00 AM</p>
-
-<div class="countdown" id="countdown">
-
-Loading countdown...
-
-</div>
-
-<button onclick="window.open('https://forms.gle/n5p8gXYEx51DzLmD7')">
-
-REGISTER NOW
-
-</button>
-
-</div>
-
-<!-- CONTACT -->
-
-<div id="contact" class="section">
-
-<button onclick="window.open('https://wa.me/916350429620')">
-WhatsApp
-</button>
-
-<button onclick="window.open('mailto:orgoverlord@gmail.com')">
-Email
-</button>
-
-<button onclick="window.open('https://www.instagram.com/overlord_esport_')">
-Instagram
-</button>
-
-<button onclick="window.open('https://youtube.com/@oldesportss')">
-YouTube
-</button>
-
-<button onclick="window.open('https://discord.gg/HT4s46mV7b')">
-Discord
-</button>
-
-</div>
-
-<script>
-
-function show(id){
-document.querySelectorAll(".section").forEach(sec=>sec.classList.remove("active"));
-document.getElementById(id).classList.add("active");
-}
-
-/* COUNTDOWN */
-
-var end=new Date("Feb 28, 2026 18:00:00").getTime();
-
-setInterval(function(){
-
-var now=new Date().getTime();
-var diff=end-now;
-
-var d=Math.floor(diff/(1000*60*60*24));
-var h=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
-var m=Math.floor((diff%(1000*60*60))/(1000*60));
-var s=Math.floor((diff%(1000*60))/1000);
-
-document.getElementById("countdown").innerHTML=
-"Registration Ends In: "+d+"d "+h+"h "+m+"m "+s+"s";
-
-},1000);
-
-</script>
-
-</body>
-</html>
+<p>
+RUDRA
