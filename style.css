@@ -1,43 +1,43 @@
-/* ===== GLOBAL ===== */
+/* ========================= */
+/* OVERLORD ESPORTS STYLE */
+/* Red & Black Esports Theme */
+/* ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
     color: white;
-    background: url("background.jpg") no-repeat center center fixed;
-    background-size: cover;
 }
 
-/* Dark overlay */
-body::before {
-    content: "";
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.80);
-    z-index: -1;
-}
-
-/* ===== HEADER ===== */
+/* ================= HEADER ================= */
 
 header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 60px;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
 }
 
 .logo {
-    height: 90px;
+    height: 70px;
 }
 
 nav a {
     color: white;
-    margin-left: 35px;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
+    margin-left: 30px;
+    font-size: 18px;
     transition: 0.3s;
 }
 
@@ -45,124 +45,100 @@ nav a:hover {
     color: red;
 }
 
-/* ===== HERO ===== */
+/* ================= HERO SECTION ================= */
 
 .hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
     text-align: center;
-    padding: 220px 20px;
 }
 
 .hero h1 {
     font-size: 70px;
-    margin-bottom: 20px;
+    color: red;
+    text-shadow: 0 0 20px red;
 }
 
 .hero p {
-    font-size: 26px;
+    font-size: 24px;
+    margin-top: 20px;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 18px 50px;
+    margin-top: 30px;
+    padding: 15px 40px;
     background: red;
     color: white;
     text-decoration: none;
-    border-radius: 10px;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 20px;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
 .btn:hover {
     background: darkred;
-    transform: scale(1.1);
+    box-shadow: 0 0 20px red;
 }
 
-/* ===== TOURNAMENT LIST PAGE ===== */
-
-.tournament-list {
-    padding: 150px 10%;
-    text-align: center;
-}
-
-.tournament-list h2 {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.bracket {
-    background: rgba(0,0,0,0.85);
-    padding: 30px;
-    margin: 30px auto;
-    width: 70%;
-    font-size: 26px;
-    font-weight: bold;
-    border-left: 10px solid red;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-.bracket a {
-    color: white;
-    text-decoration: none;
-}
-
-.bracket:hover {
-    transform: scale(1.07);
-}
-
-/* ===== TOURNAMENT DETAIL PAGE ===== */
+/* ================= TOURNAMENT PAGE ================= */
 
 .tournament-page {
-    padding: 150px 10%;
+    padding: 150px 60px 80px;
     text-align: center;
 }
 
 .t-logo {
-    width: 220px;
+    width: 180px;
     margin-bottom: 20px;
 }
 
 .banner {
     width: 70%;
-    margin: 30px auto;
-    border-radius: 15px;
+    max-width: 900px;
+    border-radius: 12px;
+    margin: 30px 0;
 }
 
-.sponsor {
-    width: 180px;
-    margin: 25px 0;
+.countdowns {
+    margin-top: 20px;
 }
 
 .countdowns h3 {
-    font-size: 30px;
-    margin-top: 50px;
+    margin-top: 15px;
+    color: red;
+    font-size: 28px;
 }
 
 .countdowns p {
-    font-size: 28px;
-    font-weight: bold;
-    color: red;
+    font-size: 24px;
+    margin-top: 10px;
 }
 
-/* ===== PRIZE SECTION ===== */
+/* ================= PRIZE SECTION ================= */
 
 .prizes {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .prizes h2 {
-    font-size: 45px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: red;
 }
 
 .prize-card {
-    margin: 30px auto;
+    background: #111;
+    margin: 20px auto;
     padding: 30px;
     width: 400px;
-    border-radius: 20px;
-    font-size: 26px;
-    font-weight: bold;
+    border-radius: 12px;
+    font-size: 22px;
     transition: 0.3s;
 }
 
@@ -170,42 +146,162 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-.gold { background: gold; color: black; }
-.silver { background: silver; color: black; }
-.bronze { background: #cd7f32; color: black; }
-
-.location {
-    margin-top: 80px;
-    font-size: 24px;
+.gold {
+    border: 2px solid gold;
+    box-shadow: 0 0 15px gold;
 }
 
-/* ===== CONTACT PAGE ===== */
+.silver {
+    border: 2px solid silver;
+    box-shadow: 0 0 15px silver;
+}
+
+.bronze {
+    border: 2px solid #cd7f32;
+    box-shadow: 0 0 15px #cd7f32;
+}
+
+/* ================= LOCATION ================= */
+
+.location {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+/* ================= TOURNAMENT LIST ================= */
+
+.tournament-list {
+    padding: 150px 60px;
+    text-align: center;
+}
+
+.tournament-list h2 {
+    font-size: 50px;
+    color: red;
+    margin-bottom: 40px;
+}
+
+.bracket {
+    background: #111;
+    margin: 20px auto;
+    padding: 25px;
+    width: 500px;
+    font-size: 24px;
+    border-left: 5px solid red;
+    transition: 0.3s;
+}
+
+.bracket:hover {
+    background: #222;
+    transform: scale(1.05);
+}
+
+/* ================= CONTACT PAGE ================= */
 
 .contact {
-    padding: 180px 10%;
+    padding: 150px 60px;
     text-align: center;
 }
 
 .contact h2 {
-    font-size: 55px;
-    margin-bottom: 60px;
+    font-size: 50px;
+    color: red;
+    margin-bottom: 40px;
 }
 
 .contact-btn {
     display: block;
-    margin: 25px auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 15px;
     width: 350px;
-    background: red;
+    background: #111;
     color: white;
     text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 12px;
+    font-size: 22px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
 .contact-btn:hover {
-    background: darkred;
-    transform: scale(1.1);
+    background: red;
+    box-shadow: 0 0 15px red;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        height: 55px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin-left: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .tournament-list h2 {
+        font-size: 32px;
+    }
+
+    .bracket {
+        width: 95%;
+        font-size: 18px;
+    }
+
+    .tournament-page {
+        padding: 120px 20px 60px;
+    }
+
+    .t-logo {
+        width: 120px;
+    }
+
+    .banner {
+        width: 95%;
+    }
+
+    .countdowns h3 {
+        font-size: 20px;
+    }
+
+    .countdowns p {
+        font-size: 18px;
+    }
+
+    .prize-card {
+        width: 95%;
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .location {
+        font-size: 18px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .contact-btn {
+        width: 95%;
+        font-size: 18px;
+    }
 }
