@@ -165,3 +165,34 @@ nav a:hover {
     font-size: 22px;
     border-radius: 8px;
 }
+
+/* ===== GLOWING GREEN HEADINGS ===== */
+
+/* Homepage Main Title */
+.hero h1 {
+    color: #00ff66;
+    text-shadow: 
+        0 0 5px #00ff66,
+        0 0 10px #00ff66,
+        0 0 20px #00cc55,
+        0 0 40px #00aa44;
+}
+
+/* Homepage Subtitle */
+.hero p {
+    color: #00ff66;
+    text-shadow: 
+        0 0 5px #00ff66,
+        0 0 10px #00cc55,
+        0 0 20px #009944;
+}
+
+/* Contact Page Heading */
+.contact h2 {
+    color: #00ff66;
+    text-shadow: 
+        0 0 5px #00ff66,
+        0 0 10px #00ff66,
+        0 0 20px #00cc55,
+        0 0 40px #00aa44;
+}
