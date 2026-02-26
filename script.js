@@ -1,22 +1,24 @@
-function countdown(id, date) {
-    var end = new Date(date).getTime();
+const regEnd = new Date("Feb 28, 2026 18:00:00").getTime();
+const startTime = new Date("Mar 1, 2026 11:00:00").getTime();
 
-    setInterval(function(){
-        var now = new Date().getTime();
-        var distance = end - now;
+setInterval(function() {
+    const now = new Date().getTime();
 
-        var d = Math.floor(distance / (1000*60*60*24));
-        var h = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
-        var m = Math.floor((distance % (1000*60*60))/(1000*60));
-        var s = Math.floor((distance % (1000*60))/1000);
+    const regDiff = regEnd - now;
+    const startDiff = startTime - now;
 
-        document.getElementById(id).innerHTML =
-        d+"d "+h+"h "+m+"m "+s+"s";
+    function format(diff) {
+        const days = Math.floor(diff / (1000*60*60*24));
+        const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+        const minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+        const seconds = Math.floor((diff % (1000*60)) / 1000);
+        return days+"d "+hours+"h "+minutes+"m "+seconds+"s";
+    }
 
-    },1000);
-}
+    if(document.getElementById("regCounter"))
+        document.getElementById("regCounter").innerHTML = format(regDiff);
 
-window.onload=function(){
-    countdown("regCountdown","Feb 28, 2026 18:00:00");
-    countdown("startCountdown","Mar 1, 2026 11:00:00");
-}
+    if(document.getElementById("startCounter"))
+        document.getElementById("startCounter").innerHTML = format(startDiff);
+
+}, 1000);
