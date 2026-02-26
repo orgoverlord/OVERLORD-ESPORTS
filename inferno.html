@@ -3,7 +3,6 @@
 <head>
     <title>Inferno Championship</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
 
@@ -18,45 +17,45 @@
 
 <section class="tournament-page">
 
-    <img src="inferno-logo.png" class="t-logo">
+    <h1>INFERNO CHAMPIONSHIP INDORE S1</h1>
 
-    <img src="inferno-banner.png" class="banner">
+    <p><b>LAN Event Location:</b> ANK Professional Academy, Tilak Nagar</p>
+    <p><b>Start Time:</b> 1 March 2026 - 11:00 AM</p>
 
-    <a href="https://forms.gle/n5p8gXYEx51DzLmD7" target="_blank" class="btn">
-        REGISTER NOW
-    </a>
+    <a href="https://forms.gle/n5p8gXYEx51DzLmD7" class="btn">REGISTER NOW</a>
 
     <div class="countdowns">
-        <h3>Registration Ends In:</h3>
-        <p id="regCountdown"></p>
+        <p>Registration Ends In:</p>
+        <p id="regCounter"></p>
 
-        <h3>Tournament Starts In:</h3>
-        <p id="startCountdown"></p>
+        <p>Tournament Starts In:</p>
+        <p id="startCounter"></p>
     </div>
 
-    <div class="prizes">
-        <h2>🏆 PRIZE POOL</h2>
-
-        <div class="prize-card gold">
-            🥇 1st Place – 2500 Diamonds + Gold Medal
-        </div>
-
-        <div class="prize-card silver">
-            🥈 2nd Place – 1500 Diamonds + Silver Medal
-        </div>
-
-        <div class="prize-card bronze">
-            🥉 3rd Place – 1000 Diamonds + Bronze Medal
-        </div>
+    <div class="prize-pool">
+        <h2>PRIZE POOL</h2>
+        <div class="prize-card">🥇 1st - 2500 Diamonds + Gold Medal</div>
+        <div class="prize-card">🥈 2nd - 1500 Diamonds + Silver Medal</div>
+        <div class="prize-card">🥉 3rd - 1000 Diamonds + Bronze Medal</div>
     </div>
 
-    <div class="location">
-        📍 ANK PROFESSIONAL ACADEMY<br>
-        Tilak Nagar, Indore<br><br>
-        🗓 1 March 2026 – 11:00 AM
+    <div class="venue-section">
+        <h2>EVENT VENUE</h2>
+
+        <iframe 
+            src="https://maps.google.com/maps?q=ANK%20Professional%20Academy%20Tilak%20Nagar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen>
+        </iframe>
+
+        <a href="https://maps.app.goo.gl/PuvWg7hQyAAF4DQy8" 
+           target="_blank" 
+           class="map-btn">
+           OPEN IN GOOGLE MAPS
+        </a>
     </div>
 
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
