@@ -1,8 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: white;
-    background: url('background.jpg');
+    color: #e6ffe6;
+
+    background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
