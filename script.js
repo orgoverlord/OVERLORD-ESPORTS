@@ -22,3 +22,23 @@ setInterval(function() {
         document.getElementById("startCounter").innerHTML = format(startDiff);
 
 }, 1000);
+
+function openPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+function outsideClick(event) {
+    if (event.target.classList.contains("popup-overlay")) {
+        closePopup();
+    }
+}
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closePopup();
+    }
+});
