@@ -356,23 +356,3 @@ nav a:hover {
     color: #ffffff;
     text-shadow: 0 0 10px #ff1a1a;
 }
-
-/* Make each section full screen */
-section {
-    min-height: 100vh;
-    padding: 60px 20px;
-    box-sizing: border-box;
-}
-
-/* Second background section */
-.second-section {
-    min-height: 100vh;
-}
-
-/* Footer always at end */
-footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
