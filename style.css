@@ -356,3 +356,14 @@ nav a:hover {
     color: #ffffff;
     text-shadow: 0 0 10px #ff1a1a;
 }
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
