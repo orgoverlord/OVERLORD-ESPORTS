@@ -1,10 +1,8 @@
-const regEnd = new Date("Feb 28, 2026 18:00:00").getTime();
 const startTime = new Date("Mar 1, 2026 11:00:00").getTime();
 
 setInterval(function() {
     const now = new Date().getTime();
 
-    const regDiff = regEnd - now;
     const startDiff = startTime - now;
 
     function format(diff) {
@@ -14,9 +12,6 @@ setInterval(function() {
         const seconds = Math.floor((diff % (1000*60)) / 1000);
         return days+"d "+hours+"h "+minutes+"m "+seconds+"s";
     }
-
-    if(document.getElementById("regCounter"))
-        document.getElementById("regCounter").innerHTML = format(regDiff);
 
     if(document.getElementById("startCounter"))
         document.getElementById("startCounter").innerHTML = format(startDiff);
