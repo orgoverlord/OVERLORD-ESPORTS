@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inferno Championship</title>
+    <title>Inferno Championship - Completed</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,15 +19,9 @@
 
     <h1>INFERNO CHAMPIONSHIP INDORE S1</h1>
 
+    <p><b>Status:</b> COMPLETED ✅</p>
     <p><b>LAN Event Location:</b> ANK Professional Academy, Tilak Nagar</p>
-    <p><b>Start Time:</b> 1 March 2026 - 11:00 AM</p>
-
-    <button class="btn" onclick="openPopup()">REGISTER NOW</button>
-
-    <div class="countdowns">
-    <p>Tournament Starts In:</p>
-    <p id="startCounter"></p>
-    </div>
+    <p><b>Date:</b> 1 March 2026 - 11:00 AM</p>
 
     <div class="prize-pool">
         <h2>PRIZE POOL</h2>
@@ -36,44 +30,43 @@
         <div class="prize-card">🥉 3rd - 1000 Diamonds + Bronze Medal</div>
     </div>
 
-    <div class="venue-section">
-        <h2>EVENT VENUE</h2>
+    <!-- RESULTS SECTION -->
+    <div class="results-section">
+        <h2>🏆 OFFICIAL RESULTS</h2>
 
-        <iframe 
-            src="https://maps.google.com/maps?q=ANK%20Professional%20Academy%20Tilak%20Nagar&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            allowfullscreen>
-        </iframe>
+        <div class="result-card">
+            <h3>🥇 TEAM HAVOCS</h3>
+            <img src="havocs.jpg" alt="Team Havocs">
+            <p>
+                Team Havocs dominated the championship with exceptional strategy,
+                flawless coordination, and aggressive gameplay. Their consistency
+                throughout the tournament secured them the title in spectacular fashion.
+            </p>
+        </div>
 
-        <a href="https://maps.app.goo.gl/PuvWg7hQyAAF4DQy8" 
-           target="_blank" 
-           class="map-btn">
-           OPEN IN GOOGLE MAPS
-        </a>
+        <div class="result-card">
+            <h3>🥈 NEXFURY E-SPORTS</h3>
+            <img src="nexfury.jpg" alt="Nexfury E-Sports">
+            <p>
+                Nexfury E-Sports displayed outstanding teamwork and tactical brilliance.
+                Their strong rotations and disciplined gameplay pushed them to a well-earned
+                second-place finish.
+            </p>
+        </div>
+
+        <div class="result-card">
+            <h3>🥉 KBN FORCE</h3>
+            <img src="kbnforce.jpg" alt="KBN Force">
+            <p>
+                KBN Force proved their resilience with powerful comeback performances.
+                Their determination and clutch moments made them one of the most exciting
+                teams of the tournament.
+            </p>
+        </div>
+
     </div>
 
 </section>
-
-<!-- POPUP START -->
-<div id="popup" class="popup-overlay" onclick="outsideClick(event)">
-    <div class="popup-box animate-popup">
-        <span class="close-x" onclick="closePopup()">✖</span>
-
-        <h2>⚠ REGISTRATION CLOSED ⚠</h2>
-
-        <p>
-            Registrations for Inferno Championship Indore S1 are now closed.
-            Thank you for your amazing support 🔥
-            Stay tuned for upcoming tournaments!
-        </p>
-
-        <button onclick="closePopup()" class="close-btn">
-            CONTINUE
-        </button>
-    </div>
-</div>
-<!-- POPUP END -->
-
-<script src="script.js"></script>
 
 </body>
 </html>
