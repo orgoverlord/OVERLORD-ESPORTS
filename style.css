@@ -278,3 +278,39 @@ nav a:hover {
     transform: scale(1.08);
     box-shadow: 0 0 35px #ff4d00;
 }
+
+/* ================= CLIPS SECTION ================= */
+
+.clips-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.clips-section h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 20px #ff1a1a;
+}
+
+.clips-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.clips-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #990000, #ff1a1a);
+    box-shadow: 0 0 15px #ff1a1a;
+    transition: 0.3s;
+}
+
+.clips-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #ff4d00;
+}
