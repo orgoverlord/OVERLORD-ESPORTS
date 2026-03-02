@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #e6ffe6;
-
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
 }
@@ -59,6 +58,8 @@ nav a:hover {
         0 0 15px #990000;
 }
 
+/* ================= BUTTON ================= */
+
 .btn {
     display: inline-block;
     margin-top: 30px;
@@ -68,6 +69,8 @@ nav a:hover {
     text-decoration: none;
     font-size: 22px;
     border-radius: 8px;
+    border: none;
+    cursor: pointer;
     box-shadow: 0 0 15px #ff1a1a;
     transition: 0.3s;
 }
@@ -119,10 +122,6 @@ nav a:hover {
     text-shadow: 0 0 20px #ff1a1a;
 }
 
-.countdowns p {
-    font-size: 26px;
-}
-
 .prize-card {
     background: rgba(0,0,0,0.9);
     margin: 20px auto;
@@ -130,6 +129,44 @@ nav a:hover {
     width: 60%;
     font-size: 22px;
     border-left: 5px solid #ff1a1a;
+}
+
+/* ================= RESULTS ================= */
+
+.results-section {
+    margin-top: 100px;
+}
+
+.results-section h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px #ff1a1a;
+}
+
+.result-card {
+    background: rgba(0,0,0,0.9);
+    padding: 30px;
+    margin: 40px auto;
+    width: 70%;
+    border-left: 6px solid #ff1a1a;
+    border-radius: 10px;
+}
+
+.result-card img {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.result-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.result-card p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 /* ================= VENUE ================= */
@@ -199,83 +236,6 @@ nav a:hover {
 .contact-btn:hover {
     box-shadow: 0 0 30px #ff4d00;
     transform: scale(1.05);
-}
-
-/* ================= POPUP ================= */
-
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(8px);
-    background: rgba(0, 0, 0, 0.9);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.popup-box {
-    position: relative;
-    background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
-    padding: 45px;
-    width: 420px;
-    max-width: 90%;
-    text-align: center;
-    border-radius: 15px;
-    border: 2px solid #ff1a1a;
-    box-shadow: 0 0 25px #ff1a1a;
-    animation: zoomIn 0.4s ease, pulseGlow 2s infinite alternate;
-}
-
-.close-x {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 22px;
-    cursor: pointer;
-    color: #ff1a1a;
-}
-
-.popup-box h2 {
-    color: #ffffff;
-    text-shadow: 0 0 15px #ff1a1a;
-    margin-bottom: 20px;
-}
-
-.popup-box p {
-    color: #cccccc;
-    font-size: 18px;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.close-btn {
-    padding: 12px 35px;
-    background: linear-gradient(45deg, #990000, #ff1a1a);
-    color: white;
-    border: none;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.close-btn:hover {
-    box-shadow: 0 0 30px #ff4d00;
-    transform: scale(1.08);
-}
-
-@keyframes zoomIn {
-    from { transform: scale(0.6); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-@keyframes pulseGlow {
-    from { box-shadow: 0 0 15px #ff1a1a; }
-    to { box-shadow: 0 0 35px #ff4d00; }
 }
 
 /* ================= COMMUNITY ================= */
