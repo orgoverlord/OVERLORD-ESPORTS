@@ -314,3 +314,22 @@ nav a:hover {
     transform: scale(1.05);
     box-shadow: 0 0 35px #ff4d00;
 }
+
+/* ===== ELITE PAGE ENHANCEMENT ===== */
+
+.tournament-page p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.prize-pool h2 {
+    margin-top: 40px;
+    font-size: 32px;
+    text-shadow: 0 0 15px #ff1a1a;
+}
+
+/* Highlight REGISTER button more */
+.tournament-page .btn {
+    margin-top: 25px;
+    display: inline-block;
+}
