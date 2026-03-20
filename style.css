@@ -369,3 +369,19 @@ nav a:hover {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+/* ===== FIX SMALL TEXT ISSUE ===== */
+
+p {
+    font-size: 20px;
+}
+
+/* Tournament pages text */
+.tournament-page p {
+    font-size: 22px;
+}
+
+/* Structure page text */
+.structure-section p {
+    font-size: 22px;
+}
