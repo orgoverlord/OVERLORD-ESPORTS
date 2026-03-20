@@ -333,3 +333,39 @@ nav a:hover {
     margin-top: 25px;
     display: inline-block;
 }
+
+/* ===== TOURNAMENT STRUCTURE ===== */
+
+.structure-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.structure-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px #ff1a1a;
+}
+
+.structure-section p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* RESULT IMAGE CARD */
+.result-card {
+    margin: 25px auto;
+    width: 60%;
+    max-width: 500px;
+    background: rgba(0,0,0,0.9);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ff1a1a;
+    box-shadow: 0 0 15px #ff1a1a;
+}
+
+.result-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
